@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="src/jquery.js"></script>
+	<link rel="stylesheet" href="styles/main.css">	
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<title>Document</title>
+</head>
+<body>
+
+	<header class="clearfix">
+		<div class="container">
+			<nav class="nav-bar">
+				<ul class="menu">
+					<li class="menu-item current"><a href="#">Каталог</a></li>
+					<li class="menu-item"><a href="#">Доставка и оплата</a></li>
+					<li class="menu-item"><a href="#">Контакты</a></li>
+					<li class="menu-item"><a href="#">Блог</a></li>
+					<li class="menu-item"><a href="#">О магазине</a></li>
+				</ul>
+			</nav>
+			
+			<div class="button-menu-wrapper flex-center mobile">
+				<button class="button-menu flex-center">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</button>
+			</div>
+			
+			<div class="wrapper button-phone-wrapper">
+				<button class="button-phone btn">
+					<img src="src/img/body/telephone.png" alt="telephone">
+				</button>
+			</div>
+				 
+			<div class="wrapper button-search-wrapper">
+				<button class="button-search btn">
+					<img src="src/img/body/search.png" alt="search">
+				</button>
+			</div>
+			
+			<div class="wrapper button-man-wrapper">
+				<button class="button-man btn">
+					<img src="src/img/body/man.png" alt="man">
+				</button>	
+			</div>
+
+			<div class="social-networks-block">
+				<ul class="social-networks">
+					<li class="social-network"><a href="#"><img src="src/img/instagram.svg" alt="instagram-logo"></a></li>
+					<li class="social-network"><a href="#"><img src="src/img/facebook.svg" alt="facebook-logo"></a></li>
+					<li class="social-network"><a href="#"><img src="src/img/telegram.svg" alt="telegram-logo"></a></li>
+					<li class="social-network"><a href="#"><img src="src/img/vk.svg" alt="vk-logo"></a></li>
+				</ul>
+			</div>
+
+			<div class="currency">
+				<div class="kgs item">
+					<img src="src/img/kyrgyzstan.png" alt="kgs-currency">
+					<span class="text">KGS</span>
+				</div>
+				<div class="usd item active">
+					<img src="src/img/united-states.png" alt="usd-currency">
+					<span class="text">USD</span>
+				</div>
+			</div>
+
+			<div class="log-in-button">
+				<a href="#" class="flex-center">	
+					<img src="src/img/man.png" alt="man">
+					<span class="text">Войти</span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="top-bar">
+		<div class="container">
+
+			<div class="header-logo-block flex-align-center">
+				<a href="#" class="header-logo"><img src="src/img/Logo.png" alt="logo"></a>
+				<h1>Интернет-магазин детских товаров</h1>
+			</div>
+
+			<div class="header-icon-block shopping-cart flex-align-center">
+				<a href="#" class="icon-top-bar">
+					<div class="amount flex-center">1</div>
+					<img src="src/img/shopping-cart-header.svg" alt="shopping-cart">
+				</a>
+			</div>
+
+			<div class="header-icon-block liked flex-align-center">
+				<a href="#" class="icon-top-bar">
+					<div class="amount flex-center">13</div>
+					<img src="src/img/heart-header.svg" alt="heart">
+				</a>
+			</div>
+
+			<div class="header-contact-block flex-center">
+				<div class="phone">+38 (095) 893 55 03</div>
+				<div class="schedule">с 9:00 до 20:00, ежедневно</div>
+			</div>
+
+			<div class="header-search-block flex-align-center">
+				<div class="search">
+					<img src="src/img/search.png" alt="search" >
+					<input type="text" placeholder="Поиск по каталогу">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<div class="catalog-menu">
+		<div class="container">
+			<ul class="catalogs">
+				<li class="catalog">
+					<a href="#" class="flex-center">
+						<div class="icon"><img class="icon-img" src="src/img/catalog-menu/maternity.svg" alt="maternity"></div>	
+						<span class="text">Товары для мам</span>
+					</a>
+				</li>
+				<li class="catalog">
+					<a href="#" class="flex-center">
+						<div class="icon"><img class="icon-img" src="src/img/catalog-menu/baby-carriage.svg" alt="/baby-carriage"></div>
+						<span class="text">Коляски</span>
+					</a>
+				</li>
+				<li class="catalog">
+					<a href="#" class="flex-center">
+						<div class="icon"><img class="icon-img" src="src/img/catalog-menu/seat.svg" alt="seat"></div>
+						<span class="text">Автокресла</span>
+					</a>
+				</li>
+				<li class="catalog">
+					<a href="#" class="flex-center">
+						<div class="icon"><img class="icon-img" src="src/img/catalog-menu/crib.svg" alt="crib"></div>
+						<span class="text">Комната и сон</span>
+					</a>
+				</li>
+				<li class="catalog">
+					<a href="#" class="flex-center">
+						<div class="icon"><img class="icon-img" src="src/img/catalog-menu/baby-bottle.svg" alt="baby-bottle"></div>
+						<span class="text">Кормление</span>
+					</a>
+				</li>
+				<li class="catalog">
+					<a href="#" class="flex-center">
+						<div class="icon"><img class="icon-img" src="src/img/catalog-menu/bath.svg" alt="bath"></div>
+						<span class="text">Купание и уход</span>
+					</a>
+				</li>
+				<li class="catalog">
+					<a href="#" class="flex-center">
+						<div class="icon"><img class="icon-img" src="src/img/catalog-menu/teddy-bear.svg" alt="teddy-bear"></div>
+						<span class="text">Игрушки</span>
+					</a>
+				</li>
+				<li class="catalog">
+					<a href="#" class="flex-center">
+						<div class="icon"><img class="icon-img" src="src/img/catalog-menu/umbrella.svg" alt="umbrella"></div>
+						<span class="text">Аксессуары</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+	<div class="slide-section">
+		<div class="container">
+			<div class="slider">
+				<div class="slide">
+					<div class="slide-bg">
+						<h2>Коляска StyleGo для прогулок</h2>
+						<span class="discount">со скидкой 35%</span>
+						<button class="button-more-details">Подробнее</button>
+					</div>
+				</div>				
+				<div class="slide">
+					<div class="slide-bg">
+						<h2>Коляска StyleGo для прогулок</h2>
+						<span class="discount">со скидкой 35%</span>
+						<button class="button-more-details">Подробнее</button>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<button class="arrow arrow-left">
+				<img src="src/img/arrow-left.svg" alt="/arrow-left">
+			</button>
+			<button class="arrow arrow-right">
+				<img src="src/img/arrow-right.svg" alt="arrow-right">
+			</button>
+
+			<div class="slider-buttons">
+				<div class="slider-buttons-animate-wrapper">
+					<div class="slider-buttons-wrapper">
+						<div class="slider-button__item active"></div>
+					</div>
+				</div>
+				<div class="slider-button__item"></div>
+				<div class="slider-button__item"></div>
+			</div>
+
+			<div class="counter">
+				<img src="src/img/wave.png" alt="wave" class="wave">
+				<div class="block">
+					<span class="text">До конца акции осталось:</span>
+					<div class="base">
+						<div class="num">1</div>
+						<div class="num">0</div>
+						<div class="devider">:</div>
+						<div class="num">0</div>
+						<div class="num">2</div>
+						<div class="devider">:</div>
+						<div class="num">3</div>
+						<div class="num">5</div>
+						<div class="devider">:</div>
+						<div class="num">4</div>
+						<div class="num">0</div>
+					</div>
+					<span class="days">Дней</span>
+					<span class="hours">Часов</span>
+					<span class="minutes">Минут</span>
+					<span class="seconds">Секунд</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+	<section class="advantages-section">
+		<div class="container">
+			<ul class="advantages">
+				<li class="item">
+					<div class="icon">
+						<img src="src/img/gift-box.svg" alt="gift-box">
+					</div>
+					<p class="text"><span class="marked">Акции и скидки </span><br>для наших клиентов</span></p>
+				</li>
+				<li class="item">
+					<div class="icon">
+						<img src="src/img/delivery-truck.svg" alt="delivery-truck">
+					</div>
+					<p class="text"><span class="marked">Бесплатная доставка </span><br>по всей России и СНГ</p>
+				</li>
+				<li class="item">
+					<div class="icon">
+						<img src="src/img/medal.svg" alt="medal">
+					</div>
+					<p class="text"><span class="marked">Гарантия качества товаров </span><br>до 12 месяцев </p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+
+
+
+	<section class="categories-section">
+			
+		<div class="container">
+			<img src="src/img/categories/soother-big-categories.png" alt="baby-bg-images" class="img-big-soother">
+			<img src="src/img/categories/soother-categories.png" alt="soother" class="img-soother"> 
+			<img src="src/img/categories/bottle-categories.png" alt="bottle" class="img-bottle">
+			<h2>У нас широкая линейка продукции</h2>
+
+			<ul class="category-wrapper flex-center">
+				<li class="category-item">
+					<div class="circle-1 flex-center">
+						<div class="circle-2 flex-center">
+							<div class="circle-3 flex-center">
+								<img src="src/img/categories/category-item1.png" alt="buggy" class="category-img">
+								<div class="amount">322 товара</div>
+							</div>
+						</div>
+					</div>					
+					<span class="name">Коляски</span><span class="price">от 1000 руб.</span>
+				</li>
+				<li class="category-item">
+					<div class="circle-1 flex-center">
+						<div class="circle-2 flex-center">
+							<div class="circle-3 flex-center">
+								<img src="src/img/categories/category-item2.png" alt="car-seat" class="category-img">
+								<div class="amount">322 товара</div>
+							</div>
+						</div>
+					</div>		
+					<span class="name">Автокресла</span><span class="price">от 1000 руб.</span>
+				</li>
+				<li class="category-item">
+					<div class="circle-1 flex-center">
+						<div class="circle-2 flex-center">
+							<div class="circle-3 flex-center">
+								<img src="src/img/categories/category-item3.png" alt="baby-bed" class="category-img">
+								<div class="amount">322 товара</div>
+							</div>
+						</div>
+					</div>	
+					<span class="name">Комната и сон</span><span class="price">от 1000 руб.</span>
+				</li>
+				<li class="category-item">
+					<div class="circle-1 flex-center">
+						<div class="circle-2 flex-center">
+							<div class="circle-3 flex-center">
+								<img src="src/img/categories/category-item4.png" alt="baby-bag" class="category-img">
+								<div class="amount">322 товара</div>
+							</div>
+						</div>
+					</div>	
+					<span class="name">Товары для мам</span><span class="price">от 1000 руб.</span>
+				</li>
+				<li  class="category-item">
+					<div class="circle-1 flex-center">
+						<div class="circle-2 flex-center">
+							<div class="circle-3 flex-center">
+								<img src="src/img/categories/category-item5.png" alt="baby-seat-eat" class="category-img">
+								<div class="amount">322 товара</div>
+							</div>
+						</div>
+					</div>	
+					<span class="name">Кормление</span><span class="price">от 1000 руб.</span>
+				</li>
+				<li  class="category-item">
+					<div class="circle-1 flex-center">
+						<div class="circle-2 flex-center">
+							<div class="circle-3 flex-center">
+								<img src="src/img/categories/category-item6.png" alt="baby-bottle-eat" class="category-img"><div class="amount">322 товара</div>
+							</div>
+						</div>
+					</div>	
+					<span class="name">Купание и уход</span><span class="price">от 1000 руб.</span>
+				</li>
+				<li  class="category-item">
+					<div class="circle-1 flex-center">
+						<div class="circle-2 flex-center">
+							<div class="circle-3 flex-center">
+								<img src="src/img/categories/category-item7.png" alt="baby-toys" class="category-img">
+								<div class="amount">322 товара</div>
+							</div>
+						</div>
+					</div>	
+					<span class="name">Игрушки</span><span class="price">от 1000 руб.</span>
+				</li>
+				<li  class="category-item">
+					<div class="circle-1 flex-center">
+						<div class="circle-2 flex-center">
+							<div class="circle-3 flex-center">
+								<img src="src/img/categories/category-item8.png" alt="baby-travel" class="category-img">
+								<div class="amount">322 товара</div>
+							</div>
+						</div>
+					</div>	
+					<span class="name">Путешествие</span><span class="price">от 1000 руб.</span>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+
+
+
+	<section class="catalog-top-new-sale-section">
+		<div class="container">
+			<div class="head-buttons">				
+				<button class="button-top-sales btn">
+				<!-- <img src="src/img/catalog-top-new/heart-btn.svg" alt="small-heart" class="img-btn"> -->Топ продаж</button>
+				<button class="button-new btn">Новинки</button>
+				<button class="button-discount btn">Скидки</button>
+			</div>
+
+			<ul class="products">
+				<li class="product-box">
+					<div class="product">
+						<img src="src/img/label.png" alt="label" class="label">
+						<div class="like"></div>
+						<div class="main">
+							<img src="src/img/catalog-top-new/catalog1.jpg" alt="product">
+							<div class="info">
+								<p class="name">Коляска из рам	очного МДФ</p>
+								<span class="discount">-35%</span>
+								<span class="previous-price">7636 руб.</span>
+								<span class="total">5656 руб.</span>
+							</div>
+						</div>
+						<div class="footer-block">
+							<button class="button-details">подробнее</button>
+							<button class="button-basket"><img src="src/img/basket.svg" alt="button-basket"></button>
+						</div>
+					</div>
+				</li>
+				<li class="product-box">
+					<div class="product">
+						<div class="like"></div>
+						<div class="main">
+							<img src="src/img/catalog-top-new/catalog2.jpg" alt="product">
+							<div class="info">
+								<p class="name">Коляска из рамочного МДФ</p>
+								<span class="discount">-35%</span>
+								<span class="previous-price">7636 руб.</span>
+								<span class="total">5656 руб.</span>
+							</div>
+						</div>
+						<div class="footer-block">
+							<button class="button-details">подробнее</button>
+							<button class="button-basket"><img src="src/img/basket.svg" alt="button-basket"></button>
+						</div>
+					</div>
+				</li>
+				<li class="product-box">
+					<div class="product">
+						<img src="src/img/label.png" alt="label" class="label">
+						<div class="like"></div>
+						<div class="main">
+							<img src="src/img/catalog-top-new/catalog3.jpg" alt="product">
+							<div class="info">
+								<p class="name">Коляска из рамочного МДФ</p>
+								<span class="discount">-35%</span>
+								<span class="previous-price">7636 руб.</span>
+								<span class="total">5656 руб.</span>
+							</div>
+						</div>
+						<div class="footer-block">
+							<button class="button-details">подробнее</button>
+							<button class="button-basket"><img src="src/img/basket.svg" alt="button-basket"></button>
+						</div>
+					</div>
+				</li>
+				<li class="product-box">
+					<div class="product">
+						<div class="like"></div>
+						<div class="main">
+							<img src="src/img/catalog-top-new/catalog4.jpg" alt="product">
+							<div class="info">
+								<p class="name">Стул для кормления</p>
+								<span class="discount">-35%</span>
+								<span class="previous-price">7636 руб.</span>
+								<span class="total">5656 руб.</span>
+							</div>
+						</div>
+						<div class="footer-block">
+							<button class="button-details">подробнее</button>
+							<button class="button-basket"><img src="src/img/basket.svg" alt="button-basket"></button>
+						</div>
+					</div>
+				</li>
+				<li class="product-box">
+					<div class="product">
+						<div class="like"></div>
+						<div class="main">
+							<img src="src/img/catalog-top-new/catalog5.jpg" alt="product">
+							<div class="info">
+								<p class="name">Атомобильное кресло</p>
+								<span class="discount">-35%</span>
+								<span class="previous-price">7636 руб.</span>
+								<span class="total">5656 руб.</span>
+							</div>
+						</div>
+						<div class="footer-block">
+							<button class="button-details">подробнее</button>
+							<button class="button-basket"><img src="src/img/basket.svg" alt="button-basket"></button>
+						</div>
+					</div>
+				</li>
+				<li class="product-box">
+					<div class="product">
+						<img src="src/img/label.png" alt="label" class="label">
+						<div class="like"></div>
+						<div class="main">
+							<img src="src/img/catalog-top-new/catalog6.jpg" alt="product">
+							<div class="info">
+								<p class="name">Сумка для прогулок</p>
+								<span class="discount">-35%</span>
+								<span class="previous-price">7636 руб.</span>
+								<span class="total">5656 руб.</span>
+							</div>
+						</div>
+						<div class="footer-block">
+							<button class="button-details">подробнее</button>
+							<button class="button-basket"><img src="src/img/basket.svg" alt="button-basket"></button>
+						</div>
+					</div>
+				</li>
+				<li class="product-box">
+					<div class="product">
+						<div class="like"></div>
+						<div class="main">
+							<img src="src/img/catalog-top-new/catalog7.jpg" alt="product">
+							<div class="info">
+								<p class="name">Детский чемодан</p>
+								<span class="discount">-35%</span>
+								<span class="previous-price">7636 руб.</span>
+								<span class="total">5656 руб.</span>
+							</div>
+						</div>
+						<div class="footer-block">
+							<button class="button-details">подробнее</button>
+							<button class="button-basket"><img src="src/img/basket.svg" alt="button-basket"></button>
+						</div>
+					</div>
+				</li>
+				<li class="product-box">
+					<div class="product">
+						<img src="src/img/label.png" alt="label" class="label">
+						<div class="like"></div>
+						<div class="main">
+							<img src="src/img/catalog-top-new/catalog8.jpg" alt="product">
+							<div class="info">
+								<p class="name flex-center">Кроватка-люлька</p>
+								<span class="discount">-35%</span>
+								<span class="previous-price">7636 руб.</span>
+								<span class="total">5656 руб.</span>
+							</div>
+						</div>
+						<div class="footer-block">
+							<button class="button-details">подробнее</button>
+							<button class="button-basket"><img src="src/img/basket.svg" alt="button-basket"></button>
+						</div>
+					</div>
+				</li>
+			</ul>
+			
+			<button class="arrow arrow-left"><img src="src/img/comments/arrow-left.svg" alt="arrow-left"></button>
+			<button class="arrow arrow-right"><img src="src/img/comments/arrow-right.svg" alt="arrow-right"></button>
+			<button class="button-follow-catalog flex-center">Перейти в каталог</button>
+		</div>
+
+		<div class="sales-for-new-product">
+			<div class="sales-for-new-product-content">
+
+				<div class="box">
+					
+					<img src="src/img/sales-or-new-product/image-bg.png" alt="animals" class="animals">
+					<div class="triangle"></div>
+					<h3>Акция 1+1<br><span class="smaller-text-size">на все игрушки</span></h3>
+					<p class="text">Купи любую игрушку и получи вторую бесплатно!</p>
+					<button class="btn-more-details">Подробнее</button>
+				</div>
+				
+				<img src="src/img/sales-or-new-product/heart.svg" alt="heart" class="container__left-big-heart big">
+				<img src="src/img/sales-or-new-product/heart.svg" alt="heart" class="container__left-medium-heart medium" >
+
+				<img src="src/img/sales-or-new-product/heart.svg" alt="heart" class="container__right-small-heart small">
+				<img src="src/img/sales-or-new-product/girl.png" alt="" class="girl">
+				<img src="src/img/sales-or-new-product/heart.svg" alt="heart" class="container__right-big-heart big">
+				<img src="src/img/sales-or-new-product/bath-rubber-duck.png" alt="" class="duck">
+				
+				<img src="src/img/sales-or-new-product/heart.svg" alt="heart" class="container__center-first-heart small">
+				<img src="src/img/sales-or-new-product/heart.svg" alt="heart" class="container__center-second-heart small">
+				<img src="src/img/sales-or-new-product/heart.svg" alt="heart" class="container__center-third-heart medium">			
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="reviews-section">
+		<div class="container">
+			<h2>Отзывы</h2>
+			<div class="multiple-items comments-wrapper">
+				<div class="comment">
+					<div class="top-img-wrapper">
+						<img src="src/img/comments/quotation-mark-top.svg" alt="quote-top" class="opening-quotation-mark">
+					</div>
+
+					<p class="comment-text">Коляску решила купить, когда ребенок только родился. До сих пор активно пользуемся. Удобная и маневренная. Все нужное для коляски было в комплекте. Хорошо проезжает даже по зимней "каше". Очень довольна! Спасибо за помощь при выборе, всем рекомендую ваш магазин!1</p>
+
+					<div class="bottom-img-wrapper">
+						<img src="src/img/comments/quotation-mark-bottom.svg" alt="quote-bottom" class="closing-quotation-mark">
+					</div>
+
+					<span class="comment-author">Алина Чумак г. Днепр</span>
+				</div>
+
+
+				<div class="comment">
+					<div class="top-img-wrapper">
+						<img src="src/img/comments/quotation-mark-top.svg" alt="quote-top" class="opening-quotation-mark">
+					</div>
+
+					<p class="comment-text">Коляску решила купить, когда ребенок только родился. До сих пор активно пользуемся. Удобная и маневренная. Все нужное для коляски было в комплекте. Хорошо проезжает даже по зимней "каше". Очень довольна!2</p>
+
+					<div class="bottom-img-wrapper">
+						<img src="src/img/comments/quotation-mark-bottom.svg" alt="quote-bottom" class="closing-quotation-mark">
+					</div>
+
+					<span class="comment-author">Алина Чумак г. Днепр</span>
+				</div>
+
+
+				<div class="comment">
+					<div class="top-img-wrapper">
+						<img src="src/img/comments/quotation-mark-top.svg" alt="quote-top" class="opening-quotation-mark">
+					</div>
+
+					<p class="comment-text">Коляску решила купить, когда ребенок только родился. До сих пор активно пользуемся. Удобная и маневренная. Все нужное для коляски было в комплекте.3</p>
+
+					<div class="bottom-img-wrapper">
+						<img src="src/img/comments/quotation-mark-bottom.svg" alt="quote-bottom" class="closing-quotation-mark">
+					</div>
+
+					<span class="comment-author">Алина Чумак г. Днепр</span>
+				</div>
+
+				<div class="comment">
+					<div class="top-img-wrapper">
+						<img src="src/img/comments/quotation-mark-top.svg" alt="quote-top" class="opening-quotation-mark">
+					</div>
+
+					<p class="comment-text">Коляску решила купить,4</p>
+
+					<div class="bottom-img-wrapper">
+						<img src="src/img/comments/quotation-mark-bottom.svg" alt="quote-bottom" class="closing-quotation-mark">
+					</div>
+
+					<span class="comment-author">Алина Чумак г. Днепр</span>
+				</div>
+
+				<div class="comment">
+					<div class="top-img-wrapper">
+						<img src="src/img/comments/quotation-mark-top.svg" alt="quote-top" class="opening-quotation-mark">
+					</div>
+
+					<p class="comment-text">Коляску решила купить, когда ребенок только родился. До сих пор активно пользуемся. Удобная и маневренная. Все нужное для коляски было в комплекте. Хорошо проезжает даже по зимней "каше". Очень довольна! Спасибо за помощь при выборе, всем рекомендую ваш магазин!5</p>
+
+					<div class="bottom-img-wrapper">
+						<img src="src/img/comments/quotation-mark-bottom.svg" alt="quote-bottom" class="closing-quotation-mark">
+					</div>
+
+					<span class="comment-author">Алина Чумак г. Днепр</span>
+				</div>
+			</div>
+			
+			<button class="arrow arrow-left"><img src="src/img/comments/arrow-left.svg" alt="arrow-left"></button>
+			<button class="arrow arrow-right"><img src="src/img/comments/arrow-right.svg" alt="arrow-right"></button>
+		</div>
+	</section>
+	
+
+
+
+	<section class="brands-section">
+		<div class="container">
+			<h2>Только качественные бренды, проверенные временем</h2>
+
+			<ul class="brands-block brands-block-first">
+				<li class="brand orient"><img class="" src="src/img/brands/Orient_Overseas_Container_Line_logo.png" alt="brands"></li>
+				<li class="brand zim"><img class="" src="src/img/brands/Zim-Logo.png" alt="brands"></li>
+				<li class="brand maersk"><img class="" src="src/img/brands/Maersk_Logo.png" alt="brands"></li>
+				<li class="brand evergreen"><img class="" src="src/img/brands/Evergreen_Logo.png" alt="brands"></li>
+				<li class="brand zim"><img class="" src="src/img/brands/Zim-Logo.png" alt="brands"></li>
+				<li class="brand cf_industries"><img class="" src="src/img/brands/CF_Industries_Logo.png" alt="brands"></li>
+			</ul>
+
+			<ul class="brands-block brands-block-second">
+				<li class="brand orient">
+					<img class="" src="src/img/brands/Orient_Overseas_Container_Line_logo.png" alt="brands">
+				</li>
+				<li class="brand zim">
+					<img class="" src="src/img/brands/Zim-Logo.png" alt="brands"></li>
+				<li class="brand maersk">
+					<img class="" src="src/img/brands/Maersk_Logo.png" alt="brands">
+				</li>
+				<li class="brand evergreen">
+					<img class="" src="src/img/brands/Evergreen_Logo.png" alt="brands">
+				</li>
+				<li class="brand zim">
+					<img class="" src="src/img/brands/Zim-Logo.png" alt="brands">
+				</li>
+				<li class="brand cf_industries">
+					<img class="" src="src/img/brands/CF_Industries_Logo.png" alt="brands">
+				</li>
+			</ul>
+
+			<button class="btn-main">Все бренды</button>
+			<button class="look-all">Посмотреть все</button>
+		</div>
+	</section>
+
+
+
+
+	<section class="blog-section">
+		<div class="container">
+			<h2>Читайте советы и рекомендации в нашем блоге</h2>
+			<img src="src/img/blog/blog-teddy.png" alt="bg-image" class="bg-image teddy-blog">
+			<img src="src/img/blog/blog-big-teddy.png" alt="bg-image" class="bg-image tedd-big-blog">
+			
+			<div class="blog-content responsive">
+				<div class="blog">
+					<span class="date">12.05.2019</span>
+					<img src="src/img/blog/baby-photo.png" alt="baby">
+					<div class="main flex-center">
+						<span class="title">7 признаков вредной игрушки</span>
+						<p class="text">Здоровье ребенка – это не шутки. Знать признаки вредной игрушки и уметь выбрать не только полезную, но и безопасную должен каждый взрослый...</p>
+					</div>
+					<button class="more-details-button-hover">подробнее</button>
+				</div>
+				<div class="blog">
+					<span class="date">12.05.2019</span>
+					<img src="src/img/blog/baby-photo.png" alt="baby">
+					<div class="main flex-center">
+						<span class="title">7 признаков вредной игрушки</span>
+						<p class="text">Здоровье ребенка – это не шутки. Знать признаки вредной игрушки и уметь выбрать не только полезную, но и безопасную должен каждый взрослый...</p>
+					</div>
+					<button class="more-details-button-hover">подробнее</button>
+				</div>
+				<div class="blog">
+					<span class="date">12.05.2019</span>
+					<img src="src/img/blog/baby-photo.png" alt="baby">
+					<div class="main flex-center">
+						<span class="title">7 признаков вредной игрушки</span>
+						<p class="text">Здоровье ребенка – это не шутки. Знать признаки вредной игрушки и уметь выбрать не только полезную, но и безопасную должен каждый взрослый...</p>
+					</div>
+					<button class="more-details-button-hover">подробнее</button>
+				</div>
+				<div class="blog">
+					<span class="date">12.05.2019</span>
+					<img src="src/img/blog/baby-photo.png" alt="baby">
+					<div class="main flex-center">
+						<span class="title">7 признаков вредной игрушки</span>
+						<p class="text">Здоровье ребенка – это не шутки. Знать признаки вредной игрушки и уметь выбрать не только полезную, но и безопасную должен каждый взрослый...</p>
+					</div>
+					<button class="more-details-button-hover">подробнее</button>
+				</div>
+				<div class="blog">
+					<span class="date">12.05.2019</span>
+					<img src="src/img/blog/baby-photo.png" alt="baby">
+					<div class="main flex-center">
+						<span class="title">7 признаков вредной игрушки</span>
+						<p class="text">Здоровье ребенка – это не шутки. Знать признаки вредной игрушки и уметь выбрать не только полезную, но и безопасную должен каждый взрослый...</p>
+					</div>
+					<button class="more-details-button-hover">подробнее</button>
+				</div>
+			</div>
+			
+			<img src="src/img/blog/blog-heart.png" alt="bg-image" class="bg-image heart-blog">			
+			<button class="arrow arrow-left"><img src="src/img/blog/blog-arrow-left.png" alt="arrow"></button>
+			<button class="arrow arrow-right"><img src="src/img/blog/blog-arrow-right.png" alt="arrow"></button>
+		</div>
+
+		<section class="subscribe">
+			<div class="subscribe-container">
+				<img src="src/img/blog/blog-soother.png" alt="bg-image" class="soother-img">
+				<div class="subscribe-content">
+					<img src="src/img/subscribe/heart-ribbon-top.png" alt="heart-ribbon" class="heart-ribbon-top">
+					<img src="src/img/subscribe/heart-ribbon-top-mob.png" alt="heart-ribbon" class="heart-ribbon-top-mob">
+					<div class="box">
+						<div class="triangle"></div>
+						<h2>Хотите первыми узнавать об акциях и специальных предложениях?</h2>
+						<div class="sign-text">Подписывайтесь на наш магазин</div>
+						<form action="" class="subscribe-form flex-center">
+							<div class="input-name-wrapper flex-center">
+								<input type="text" class="name" placeholder="Ваше имя">
+							</div>
+							<div class="input-email-wrapper flex-center">
+								<input type="text" class="name" placeholder="Ваш e-mail">
+							</div>
+							<button class="button-subscribe  flex-center">Подписаться</button>
+						</form>
+						<img src="src/img/subscribe/heart.svg" alt="heart" class="left-big-heart medium-heart-size">
+						<img src="src/img/subscribe/heart.svg" alt="heart" class="left-heart">
+						<img src="src/img/subscribe/heart.svg" alt="heart" class="right-big-heart medium-heart-size">
+						<img src="src/img/subscribe/heart.svg" alt="heart" class="right-heart small-heart-size">
+
+						<img src="src/img/subscribe/left-rabbit.png" alt="rabbit" class="left-rabbit">
+						<img src="src/img/subscribe/left-giraffe.png" alt="giraffe" class="left-giraffe">		
+						<img src="src/img/subscribe/right-bear.png" alt="bear" class="right-bear">
+						<img src="src/img/subscribe/right-cow.png" alt="cow" class="right-cow">
+						<img src="src/img/subscribe/right-fox.png" alt="fox" class="right-fox">
+					</div>
+					<img src="src/img/subscribe/heart-ribbon-bottom.png" alt="heart-ribbon" class="heart-ribbon-bottom">
+					<img src="src/img/subscribe/heart-ribbon-bottom-mob.png" alt="heart-ribbon" class="heart-ribbon-bottom-mob">
+				</div>
+			</div>
+		</section>
+		
+	</section>
+
+
+
+
+	
+
+
+
+
+	 <section class="company-info-section">
+		<div class="container">
+			<h2>О Maxi Kids</h2>
+
+			<img src="src/img/soother-txt.png" alt="bg-image" class="soother-bg-img">
+			<img src="src/img/bottle-txt.png" alt="bg-image" class="bottle-bg-img">
+
+			<div class="content-wrapper">
+				<p class="main-text"><span class="maxi-color">Maxi Kids</span> — онлайн-гипермаркет для счастливых родителей и планирующих! В нашем интернет-магазине детских товаров есть самые популярные игрушки, одежда и обувь мировых брендов, все для будущих мам и новорожденных, включая подгузники и детское питание, огромный выбор детских колясок и автокресел, а также широкий ассортимент детской мебели – от колыбелей до дизайнерского интерьера детской комнаты, а также товары для
+				обучения и творчества, книги, методики развития, товары для спорта и отдыха и всё для уютного дома и путешествий. <br><br>Мы работаем для тех, у кого дома живет Счастье!</p>
+				<div class="company-delivery-service">
+					<div class="box first-box clearfix">
+						<div class="icon-wrapper">
+							<img src="src/img/delivery-truck.svg" alt="delivery-truck">
+						</div>
+						<div class="text">Доставка в более, чем 300 пунктов выдачи и постаматов по всей России</div>
+						<p class="additional-paragraph">Просто выберите пункт выдачи рядом с Вашим домом!</p>
+					</div>
+					<div class="box second-box clearfix">
+						<div class="icon-wrapper">
+							<img src="src/img/delivery.svg" alt="delivery-truck">
+						</div>
+						<div class="text">Курьерская доставка в более, чем 5000 населенных пунктов России</div>
+						<p class="additional-paragraph">Мы доставим Ваш заказ прямо до двери!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<footer>
+		<div class="container">
+			<div class="footer-logo-block">
+				<img src="src/img/Logo2.png" alt="logo">
+				<p class="text">Интернет-магазин, где представлены лучшие детские товары. Вы легко можете посмотреть полный каталог товаров и заказать доставку, не выходя из дома.</p>
+			</div>
+
+			<div class="footer-menu-block">
+				<ul class="footer-menu">
+					<li>О магазине</li>
+					<li>Доставка и оплата</li>
+					<li>Контакты</li>
+					<li>Блог</li>
+					<li>Карта сайта</li>
+				</ul>
+			</div>
+
+			<div class="footer-subscribe-block">
+				<div class="text">Подписка на новости:</div>
+				<form action="" class="footer-subscribe-form">
+					<div class="email-input-wrapper flex-center"><input type="text" placeholder="Ваш е-mail"></div>
+					<button class="btn-subscribe">Отправить</button>
+				</form>
+			</div>
+
+			<div class="footer-contacts-block">
+				<div class="phone">+38(096) 019 18 70</div>
+				<p class="address">ул. Чернышевская 13 БЦ “Лира”, 0ф. 310</p>
+				<a href="#" class="link">kokonimageclub@gmail.com</a>
+			</div>
+
+			<div class="footer-social-network_payment-block">
+				<div class="social-networks-block">
+					<ul class="social-networks">
+						<li class="social-network"><a href="#"><img src="src/img/instagram.svg" alt="instagram-logo"></a></li>
+						<li class="social-network"><a href="#"><img src="src/img/facebook.svg" alt="facebook-logo"></a></li>
+						<li class="social-network"><a href="#"><img src="src/img/telegram.svg" alt="telegram-logo"></a></li>
+						<li class="social-network"><a href="#"><img src="src/img/vk.svg" alt="vk-logo"></a></li>
+					</ul>
+				</div>
+				<div class="payment-block">
+					<div class="text">Мы принимаем к оплате:</div>
+					<ul class="cashes">
+						<li class="cash">
+							<img src="src/img/visa.svg" alt="">
+							<span class="cash-name">Visa</span>
+						</li>
+						<li class="cash">
+							<img src="src/img/mastercard.svg" alt="">
+							<span class="cash-name">Mastercard</span>
+						</li>
+						<li class="cash">
+							<img src="src/img/elsom.svg" alt="">
+							<span class="cash-name">Элсом</span>
+						</li>
+						<li class="cash">
+							<span class="cash-name">Наличные</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom-text">&copy; MAxi Kids, Все права защищены 2019.</div>
+	</footer>
+
+	<script src="slick/slick.min.js"></script>
+	<script src="src/index.js"></script>	
+
+</body>
+</html>
