@@ -242,7 +242,7 @@
 	.icon-wrapper {
 		width: 60px;
 		height: 45px;
-		background: url('../src/img/heart-pink.png') top right no-repeat;
+		background: url('../src/img/company-info/heart-bg.svg') top right no-repeat;
 		margin-right: 20px;
 	}
 
@@ -539,7 +539,7 @@
 		}
 	}
 
-	.slick-center {
+	.active {
 		padding: 0px 27px;
 		border-radius: 45px;
 		background: $color_accent_2;
@@ -564,7 +564,7 @@
 	.icon {
 		width: 60px;
 		height: 45px;
-		background: url('../src/img/heart-pink.png') top right no-repeat;
+		background: url('../src/img/advantages/heart-bg.svg') top right no-repeat;
 	}
 
 	.marked {
@@ -691,7 +691,7 @@
 
 .icon-top-bar {
 	display: block;
-	background: url('../src/img/ball.svg') 10% 50% / cover no-repeat;
+	background: url('../src/img/top-bar/ball.svg') 10% 50% / cover no-repeat;
 	width: 66px;
 	height: 69px;
 	position: relative;
@@ -964,10 +964,6 @@ h2 {
 	height: $height;
 	bottom: -$height/2;
 }
-
-
-
-
 
 
 /* CSS for mobile devices */

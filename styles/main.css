@@ -250,7 +250,7 @@ input, button {
 .company-delivery-service .icon-wrapper {
   width: 60px;
   height: 45px;
-  background: url("../src/img/heart-pink.png") top right no-repeat;
+  background: url("../src/img/company-info/heart-bg.svg") top right no-repeat;
   margin-right: 20px; }
 
 .company-delivery-service .text {
@@ -491,7 +491,7 @@ input, button {
     margin: 0 30px 0 30px; }
     .head-buttons .btn img {
       margin-right: 11px; }
-  .head-buttons .slick-center {
+  .head-buttons .active {
     padding: 0px 27px;
     border-radius: 45px;
     background: #FFE8D3;
@@ -521,7 +521,7 @@ input, button {
   .advantages .icon {
     width: 60px;
     height: 45px;
-    background: url("../src/img/heart-pink.png") top right no-repeat; }
+    background: url("../src/img/advantages/heart-bg.svg") top right no-repeat; }
   .advantages .marked {
     font-family: Centura Round;
     font-size: 16px;
@@ -628,7 +628,7 @@ input, button {
 
 .icon-top-bar {
   display: block;
-  background: url("../src/img/ball.svg") 10% 50%/cover no-repeat;
+  background: url("../src/img/top-bar/ball.svg") 10% 50%/cover no-repeat;
   width: 66px;
   height: 69px;
   position: relative; }
@@ -1293,7 +1293,7 @@ header {
     overflow: hidden;
     text-align: center; }
     .catalog-top-new-sale-section .head-buttons .btn {
-      margin: 0;
+      margin: 0 100px 0 100px;
       height: 52px;
       font-size: 20px;
       line-height: 30px;

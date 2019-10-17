@@ -3,6 +3,7 @@ $('.cashes .cash').click(function(event) {
 	$(this).addClass('active');
 });
 
+
 $('.catalog').hover(function() {
 	let $icon = $(this).find('.icon'), $img = $(this).find('.icon-img'), img_src = $img.attr('src');
 	img_src = img_src.slice(0,img_src.length-4) + '-white.svg';
@@ -15,22 +16,12 @@ $('.catalog').hover(function() {
 	$(this).removeClass('hover');
 });
 
+
 $('.currency .item').click(function(event) {
 	$('.currency .item').removeClass('active');
 	$(this).addClass('active');
 });
 
-// function add_btn_heart($elem) {
-// 	$img = $('.img-btn');
-// 	$elem.addClass('btn-active').prepend($img);
-// }
-
-// add_btn_heart($('.head-buttons .button-top-sales'));
-
-// $('.head-buttons .btn').click(function(event) {
-// 	console.dir($(this).parent().children('.btn-active').removeClass('btn-active'));
-// 	add_btn_heart($(this));
-// });
 
 $('.brands-block .brand').hover(function() {
 	let $img = $(this).children('img'), src = $img.attr('src').slice(0,$img.attr('src').lastIndexOf('.png'))+'-hover.png';
@@ -40,19 +31,31 @@ $('.brands-block .brand').hover(function() {
 	$(this).children('img').attr('src', src);
 });
 
+
 $('.catalog-top-new-sale-section .arrow-right').click(function(event) {
-	$('.products .product-box').each(function(index, el) {
-		let left = parseInt($(this).css('left')) - 314 + 'px';
-		$(this).css('left', left);
-	});
+	let $current = $('.products .current');
+	if ($current.next().length) {
+		$current = $current.removeClass('current').next().addClass('current');
+
+		$('.products .product-box').each(function(index, el) {
+			let left = parseInt($(this).css('left')) - 314 + 'px';		
+			$(this).css('left', left);				
+		});
+	}
 });
 
 $('.catalog-top-new-sale-section .arrow-left').click(function(event) {
-	$('.products .product-box').each(function(index, el) {
-		let left = parseInt($(this).css('left')) + 314 + 'px';
-		$(this).css('left', left);
-	});
+	let $current = $('.products .current');
+	if ($current.prev().length) {
+		$current = $current.removeClass('current').prev().addClass('current');
+
+		$('.products .product-box').each(function(index, el) {
+			let left = parseInt($(this).css('left')) + 314 + 'px';
+			$(this).css('left', left);
+		});
+	}
 });
+
 
 $('.reviews-section .multiple-items').slick({
 	infinite: true,
@@ -64,6 +67,7 @@ $('.reviews-section .multiple-items').slick({
 	centerMode: true,
   	variableWidth: true
 });
+
 
 $('.blog-section .blog-content').slick({
 	infinite: false,
@@ -98,6 +102,7 @@ $('.blog-section .blog-content').slick({
 	  ]
 });
 
+
 $('.slide-section .slider').slick({
 	infinite: true,
 	slidesToShow: 1,
@@ -110,11 +115,4 @@ $('.slide-section .slider').slick({
 
 });
 
-$('.catalog-top-new-sale-section .head-buttons').slick({
-	variableWidth: true,
-	infinite: false,
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	arrows: false,
-	centerMode: true
-});
+
